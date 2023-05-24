@@ -1,0 +1,48 @@
+MODLE_ID和RadarID或者PlatID是绑定的
+EquipmentName\EquipmentType\ATT是绑定的
+  --对雷达来说
+1、只要有RadarID就说明这是雷达
+1、RadarID\TargetID\是绑定的
+2、iDetectZoneNum数量是多少 ， 下面的飞行坐标就有多少个
+--
+
+
+sRID   1_1_1   场景ID和会话ID的组合
+RadarID  雷达ID
+PlatID  6  本平台ID 
+EquipmentName   yanshi-red   飞机所搭载的设备名称
+EquipmentType   plane   设备类型
+ATT   Enum_ATT_1   飞机角色
+fTime   记录时间戳
+fLon    飞机所在位置的经度
+fLat     飞机所在位置的纬度
+fHeight   飞机所在高度
+fSpeed   飞机的速度
+fDir      飞机的方向
+fPitch     飞机的俯仰角
+fRoll      飞机的倾斜角
+iActiveFlag    记录是否被激活的标志位
+nRCSNum    返回的雷达截面数据的数量
+  "RCSArray": [{
+    "fRCS": 5.0
+  }],          返回的雷达截面数据数组，每个元素包含一个截面值
+FlyPosType    飞机的飞行状态
+iDetectZoneNum  检测区的数量
+ZonePoint[{     区域点
+    "fLon": 117.69007,
+    "fLat": 23.988073
+  }, {}
+]
+DetectError     检测错误
+FlyPosType     飞机的飞行状态
+"RadarDetectPlat": [{
+    "PlatID": 4,
+    "ATT": "Enum_ATT_2",
+    "fLon": 118.07887,
+    "fLat": 24.060778,
+    "fHeight": 5000.0,
+    "fSpeed": 300.0,
+    "DetectError": 62.851025
+  }]       雷达侦测平台
+
+iTargetNum    目标数量
